@@ -1,0 +1,4 @@
+float64[] theta1
+float64[] theta1dot
+float64[] theta2
+float64[] theta2dot
