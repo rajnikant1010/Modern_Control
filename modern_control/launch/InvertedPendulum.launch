@@ -1,0 +1,9 @@
+<launch>
+
+	<node pkg="modern_control" type="motion_model_inv.py" name="sfunction" output="screen">
+	</node>
+
+	<node pkg="modern_control" type="draw_inverted_pendulum.py" name="drawFile" output="screen">
+	</node>
+
+</launch>

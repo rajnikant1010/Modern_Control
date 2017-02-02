@@ -1,0 +1,12 @@
+<launch>
+
+	<node pkg="modern_control" type="motion_model_dp.py" name="sfunction" output="screen">
+	</node>
+
+	<node pkg="modern_control" type="draw_pendulum.py" name="drawFile" output="screen">
+	</node>
+
+</launch>
+
+
+## This is the launch file for the double pendulum animation

@@ -1,0 +1,13 @@
+<launch>
+
+	<node pkg="modern_control" type="motion_model_quadcopter.py" name="sfunction" output="screen">
+	</node>
+
+	<node pkg="modern_control" type="draw_quadcopter.py" name="drawFile" output="screen">
+	</node>
+
+	<node name="position_attitude_plot" pkg="rqt_plot" type="rqt_plot" args="/states_quad[1] /states_quad[2] /states_quad[3] /states_quad[7] /states_quad[8] /states_quad[9]" />
+
+</launch>
+
+
