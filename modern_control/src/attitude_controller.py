@@ -123,7 +123,7 @@ def main():
     except:
 	flag    = 0
 
-    print flag
+    # print flag
 
     if (flag == 1):
         try:
@@ -183,7 +183,7 @@ def main():
 	if (flag == 2):
 	    commndedAngles()
 
-	print (180*phi_c)/np.pi, (180*theta_c)/np.pi, (180*psi_c)/np.pi, elapsed_time
+	print (180*phi_c)/np.pi, (180*theta_c)/np.pi, (180*psi_c)/np.pi #, elapsed_time
 
 	sub1 = rospy.Subscriber("/quad_states" , motion_model_quad, callback1)
 	sub2 = rospy.Subscriber("/quad_func_time", time_info        , callback2)
