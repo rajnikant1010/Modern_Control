@@ -48,8 +48,11 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   motion_model_dp.msg
-  iter_info.msg
   motion_model_inv.msg
+  motion_model_quad.msg
+  attitude_ctrl.msg
+  time_info.msg
+  iter_info.msg
 #   Message2.msg
 )
 
